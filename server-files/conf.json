@@ -1,0 +1,14 @@
+{
+	"maxplayers" : 100,
+	"name" : "RAGE:MP Docker container", 
+	"url" : "https://rage.mp",
+	"gamemode" : "roleplay", 
+	"stream-distance" : 300.0,
+	"announce" : false,
+	"csharp" : "enabled",
+	"port": 22005,
+	"language": "ru",
+	"voice-chat" : true,
+	"voice-chat-sample-rate": 48000,
+	"allow-cef-debugging": true
+}
