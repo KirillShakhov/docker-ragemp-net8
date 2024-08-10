@@ -1,0 +1,23 @@
+﻿services:
+  ragemp-server:
+    image: kirillshakhov/ragemp-net8:latest
+    build:
+      context: .
+    container_name: ragemp-server
+    environment:
+      - RAGEMP_MAXPLAYERS=100
+      - RAGEMP_NAME=RAGE:MP Neoficial servir
+      - RAGEMP_URL=https://rage.mp
+      - RAGEMP_GAMEMODE=roleplay
+      - RAGEMP_STREAM_DISTANCE=300.0
+      - RAGEMP_ANNOUNCE=false
+      - RAGEMP_CSHARP=enabled
+      - RAGEMP_LANGUAGE=ru
+      - RAGEMP_VOICE_CHAT=true
+      - RAGEMP_VOICE_CHAT_SAMPLE_RATE=48000
+      - RAGEMP_ALLOW_CEF_DEBUGGING=true
+    ports:
+      - "22005:22005/udp"
+      - "22005:22005/tcp"
+      - "22006:22006/tcp"
+    restart: unless-stopped
