@@ -2,11 +2,10 @@
 
 echo "Generate conf.json"
 
-# Здесь третий элемент указывает на тип данных (string, number, boolean)
 CONFIG_PARAMS="announce:RAGEMP_ANNOUNCE:boolean
 bind:RAGEMP_BIND:string
 gamemode:RAGEMP_GAMEMODE:string
-encryption:RAGEMP_ENCRYPTION:string
+encryption:RAGEMP_ENCRYPTION:boolean
 maxplayers:RAGEMP_MAXPLAYERS:number
 name:RAGEMP_NAME:string
 stream-distance:RAGEMP_STREAM_DISTANCE:number
@@ -31,7 +30,7 @@ server-side-weapons-only-mode:RAGEMP_SERVER_SIDE_WEAPONS_ONLY_MODE:boolean
 api-threading-debugging:RAGEMP_API_THREADING_DEBUGGING:boolean
 fqdn:RAGEMP_FQDN:string
 resources-compression-level:RAGEMP_RESOURCES_COMPRESSION_LEVEL:number
-node-commandline-flags:NODE_COMMANDLINE_FLAGS:string
+node-commandline-flags:RAGEMP_NODE_COMMANDLINE_FLAGS:string
 synchronization-extrapolation-multiplier:RAGEMP_SYNCHRONIZATION_EXTRAPOLATION_MULTIPLIER:number
 http-threads:RAGEMP_HTTP_THREADS:number
 trigger-compression-logging:RAGEMP_TRIGGER_COMPRESSION_LOGGING:boolean
