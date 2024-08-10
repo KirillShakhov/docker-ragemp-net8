@@ -32,8 +32,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/ragemp-net8:latest
-            ghcr.io/${{ github.repository_owner }}/ragemp-net8:${{ github.sha }}
+            ghcr.io/kirillshakhov/ragemp-net8:latest
+            ghcr.io/kirillshakhov/ragemp-net8:${{ github.sha }}
 
       - name: Post build info
         run: echo "Docker image successfully built and pushed."
