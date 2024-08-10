@@ -81,4 +81,5 @@ echo "Содержимое сгенерированного файла conf.json
 cat conf.json
 
 echo "Server Start"
+chmod +x /server-files/ragemp-server
 /server-files/ragemp-server
