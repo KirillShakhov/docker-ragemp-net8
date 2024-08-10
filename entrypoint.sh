@@ -81,7 +81,4 @@ echo "Содержимое сгенерированного файла conf.json
 cat conf.json
 
 echo "Server Start"
-/server-files/ragemp-server > /server-files/server.log 2>&1
-
-exit_code=$?
-echo "Server has exited with code $exit_code"
+/server-files/ragemp-server
