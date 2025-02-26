@@ -39,6 +39,7 @@ trigger-compression-dictionary:RAGEMP_TRIGGER_COMPRESSION_DICTIONARY:string
 create-fastdl-snapshot:RAGEMP_CREATE_FASTDL_SNAPSHOT:boolean
 disable-client-packages-ram-cache:RAGEMP_DISABLE_CLIENT_PACKAGES_RAM_CACHE:boolean
 client-packages-shared-folder:RAGEMP_CLIENT_PACKAGES_SHARED_FOLDER:string"
+net-queue-size-multiplier:RAGEMP_NET_QUEUE_SIZE_MULTIPLIER:number
 
 {
   echo "{"
