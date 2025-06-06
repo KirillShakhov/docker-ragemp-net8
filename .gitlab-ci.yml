@@ -1,0 +1,21 @@
+stages:
+  - build
+
+variables:
+  DOCKER_TLS_CERTDIR: ""
+  HARBOR_REPO: $HARBOR_HOST/$HARBOR_PROJECT/ragemp
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$HARBOR_USERNAME" -p "$HARBOR_PASSWORD" "$HARBOR_HOST"
+  script:
+    - >
+      docker build
+      -f Dockerfile
+      -t $HARBOR_REPO:$CI_COMMIT_SHA -t $HARBOR_REPO:$CI_COMMIT_REF_SLUG .
+    - docker push $HARBOR_REPO:$CI_COMMIT_SHA
+    - docker push $HARBOR_REPO:$CI_COMMIT_REF_SLUG
